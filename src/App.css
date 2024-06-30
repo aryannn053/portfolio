@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/satoshi');
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap');
 
 * {
   font-family: 'Satoshi', sans-serif;
