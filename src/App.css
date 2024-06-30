@@ -1,152 +1,151 @@
 @import url('https://fonts.cdnfonts.com/css/satoshi');
 
 * {
-    font-family: 'Satoshi';
+  font-family: 'Satoshi', sans-serif;
 }
 
 html {
-    scroll-behavior: smooth;    
+  scroll-behavior: smooth;
 }
 
 .navbar-heading {
-    font-size: 1.4rem;
-    font-weight: 500;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
 @media (max-width: 640px) {
-    #navbar-cta ul {
-      flex-direction: row !important;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
+  #navbar-cta ul {
+    flex-direction: row !important;
+    justify-content: center;
+    flex-wrap: wrap;
   }
-  
-  @media (min-width: 641px) {
-    #navbar-cta ul {
-      flex-direction: row;
-      flex-wrap: nowrap;
-    }
+}
+
+@media (min-width: 641px) {
+  #navbar-cta ul {
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
+}
 
 .custom-font {
-    color: #313131 !important;
-    font-size: 2.2em;
-    font-weight: bold;
+  color: #313131 !important;
+  font-size: 2.2em;
+  font-weight: bold;
 }
 
 .font-dis {
-    font-size: 1.4em;
-    font-weight: bold;
-    color: #313131 !important;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #313131 !important;
 }
 
 .whytho {
-    font-size: 1.2rem;
-    font-weight: 500;
-    line-height: 26px;
-    word-spacing: 4px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 26px;
+  word-spacing: 4px;
 }
 
 .wahatag {
-    font-size: 20px;
-    color: #313131 !important;
-    font-weight: bold;
-    display: flex;
-    gap: 9px;
+  font-size: 20px;
+  color: #313131 !important;
+  font-weight: bold;
+  display: flex;
+  gap: 9px;
 
-    text-decoration: underline; 
+  text-decoration: underline;
 }
 
-
 .ionicon {
-    width: 21px;
+  width: 21px;
 }
 
 .custom-font-2 {
-    font-size: 2em;
-    font-weight: bold;
-    width: 100px;
-    cursor:pointer;
+  font-size: 2em;
+  font-weight: bold;
+  width: 100px;
+  cursor: pointer;
 }
 
 .custom-font-2:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .experience-flex {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
 
-    gap: 20px;
+  gap: 20px;
 }
 
 .experience-flex h1 {
-    font-size: 1.5em;
-    font-weight: bold;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 .yewala {
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-top: -2px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: -2px;
 }
 
 .experience-date {
-    font-weight: 500;
-    font-size: 1rem;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 .haanyekarlopehle {
-    font-size: 1.1rem;
-    font-weight: 500; 
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 .wahre {
-    font-size: 1.3em;
-    font-weight: bold;
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
 .flexarbhai {
-    display: flex;
-    gap: 9px;
+  display: flex;
+  gap: 9px;
 }
 
 .baharmil {
-    font-size: 1.6rem;   
-    font-weight: bold;
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 
 .flexbox-custom {
-    display: flex;
-    gap: 100px;
+  display: flex;
+  gap: 100px;
 }
 
 .flexbox-grid-c {
-    display: flex;
-    gap: 40px;
+  display: flex;
+  gap: 40px;
 }
 
 .flexbox-grid-c img {
-    width: 500px;
+  width: 500px;
 }
 
 @media (max-width: 1024px) {
-    .flexbox-custom {
-        display: table-row;
-        position: relative;
-        top: 20px;
-    }
+  .flexbox-custom {
+    display: table-row;
+    position: relative;
+    top: 20px;
+  }
 
-    .flexbox-grid-c {
-        display: table-row
-    }
+  .flexbox-grid-c {
+    display: table-row;
+  }
 
-    .flexbox-grid-c img {
-        padding-top: 50px;
-        padding-bottom: 70px;
-    }
+  .flexbox-grid-c img {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
 }
