@@ -4,6 +4,10 @@
     font-family: 'Satoshi';
 }
 
+html {
+    scroll-behavior: smooth;    
+}
+
 .navbar-heading {
     font-size: 1.4rem;
     font-weight: 500;
@@ -114,4 +118,35 @@
 .baharmil {
     font-size: 1.6rem;   
     font-weight: bold;
+}
+
+.flexbox-custom {
+    display: flex;
+    gap: 100px;
+}
+
+.grid {
+    display: flex;
+    gap: 40px;
+}
+
+.grid img {
+    width: 500px;
+}
+
+@media (max-width: 1024px) {
+    .flexbox-custom {
+        display: table-row;
+        position: relative;
+        top: 20px;
+    }
+
+    .grid {
+        display: table-row
+    }
+
+    .grid img {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
 }
