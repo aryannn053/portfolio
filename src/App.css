@@ -125,12 +125,12 @@ html {
     gap: 100px;
 }
 
-.grid {
+.flexbox-grid-c {
     display: flex;
     gap: 40px;
 }
 
-.grid img {
+.flexbox-grid-c img {
     width: 500px;
 }
 
@@ -141,11 +141,11 @@ html {
         top: 20px;
     }
 
-    .grid {
+    .flexbox-grid-c {
         display: table-row
     }
 
-    .grid img {
+    .flexbox-grid-c img {
         padding-top: 50px;
         padding-bottom: 70px;
     }
