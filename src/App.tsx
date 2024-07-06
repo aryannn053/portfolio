@@ -90,7 +90,7 @@ function App() {
           </p>
 
           <div className="flexbox-custom pt-8 md:gap-16">
-            <a href="https://mailto:aryannn053@gmail.com" className="wahatag">
+            <a href="mailto:aryannn053@gmail.com" className="wahatag">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="ionicon s-ion-icon"
