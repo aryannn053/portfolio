@@ -337,7 +337,7 @@ function App() {
 
             <div className="flexbox-grid-c flexbox-grid-c-cols-2">
               <a
-                href="https://leetcode.com/aryantripathi05"
+                href="https://leetcode.com/skyran"
                 className="wahatag pt-4"
               >
                 <svg
