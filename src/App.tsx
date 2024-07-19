@@ -239,7 +239,7 @@ function App() {
           <div className="px-10">
             <img
               src={image}
-              className="rounded grayscale hover:grayscale-0"
+              className="rounded grayscale hover:grayscale-0 pro-image"
               width="300"
             />
           </div>
@@ -271,7 +271,7 @@ function App() {
           <div className="px-10">
             <img
               src={image_2}
-              className="rounded grayscale hover:grayscale-0"
+              className="rounded grayscale hover:grayscale-0 pro-image"
               width="400"
             />
           </div>
@@ -304,7 +304,7 @@ function App() {
           <div className="px-10">
             <img
               src={image_3}
-              className="rounded grayscale hover:grayscale-0"
+              className="rounded grayscale hover:grayscale-0 pro-image"
               width="400"
             />
           </div>
@@ -349,7 +349,7 @@ function App() {
           <div className="px-10">
             <img
               src={image_4}
-              className="rounded grayscale hover:grayscale-0"
+              className="rounded grayscale hover:grayscale-0 pro-image"
               width="300"
             />
           </div>
@@ -382,7 +382,7 @@ function App() {
           <div className="px-10">
             <img
               src={image_5}
-              className="rounded grayscale hover:grayscale-0"
+              className="rounded grayscale hover:grayscale-0 pro-image"
               width="300"
             />
           </div>

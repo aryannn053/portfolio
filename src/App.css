@@ -44,7 +44,7 @@ html {
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 26px;
-  word-spacing: 4px;
+  word-spacing: 6px;
 }
 
 .wahatag {
@@ -178,4 +178,8 @@ html {
 
 .image-avatar {
   width: 96px;
+}
+
+.pro-image {
+  max-width: 250px !important;
 }
