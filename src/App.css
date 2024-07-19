@@ -133,6 +133,21 @@ html {
   width: 500px;
 }
 
+.experience-skill {
+  margin-left: 23vw;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #313131 !important;
+  word-spacing: 3px;
+}
+
+.skills-flex {
+  display: flex;
+}
+.custom-pad {
+  margin-left: 24vw;
+}
+
 @media (max-width: 1024px) {
   .flexbox-custom {
     display: table-row;
@@ -148,4 +163,19 @@ html {
     padding-top: 50px;
     padding-bottom: 70px;
   }
+
+  .skills-flex {
+    display: block;
+  }
+  .experience-skill {
+    margin-left: 0;
+    padding: 0;
+  }
+  .custom-pad {
+    margin-left: 0;
+  }
+}
+
+.image-avatar {
+  width: 96px;
 }

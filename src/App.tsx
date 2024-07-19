@@ -5,6 +5,7 @@ import avatar from './assets/avatar.jpg';
 import './App.css';
 
 import credio from './assets/credio.jpg';
+import design from './assets/design.png';
 import image from './assets/image.png';
 
 import image_2 from './assets/image_2.png';
@@ -73,8 +74,7 @@ function App() {
         <div className="justify-start pt-10">
           <img
             src={avatar}
-            className="rounded-full grayscale hover:grayscale-0"
-            width="96"
+            className="rounded-full image-avatar grayscale hover:grayscale-0"
           />
 
           <p className="custom-font pt-5">Badri Vishal Mani Tripathi</p>
@@ -145,6 +145,30 @@ function App() {
           <div className="pt-0">
             <div className="experience-flex">
               <img
+                src={design}
+                className="rounded-full grayscale hover:grayscale-0"
+                width="50"
+                height="50"
+              />
+
+              <div className="pt-0">
+                <div className='skills-flex'>
+                  <h1>Design Mentor</h1>
+                  <p className='pt-1 experience-skill'>Jun 2024 - Present</p>
+                </div>
+                <p className="yewala">Software Engineer</p>
+              </div>
+              <div>
+                <p className="whytho text-gray-600">
+                  Worked on creating UI designs for Design Mentor and building the website. Used Next JS and Tailwind CSS for developing the website and figma for UI designs.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="pt-1">
+            <div className="experience-flex">
+              <img
                 src={credio}
                 className="rounded-full grayscale hover:grayscale-0"
                 width="50"
@@ -152,13 +176,16 @@ function App() {
               />
 
               <div className="pt-0">
-                <h1>Crediometer</h1>
-                <p className="yewala">Frontend Developer Internship</p>
+                <div className='skills-flex'>
+                  <h1>Crediometer</h1>
+                  <p className='pt-1 custom-pad experience-skill'>Sep 2021 - Jan 2022</p>
+                </div>
+                <p className="yewala">Frontend Developer</p>
               </div>
               <div>
                 <p className="whytho text-gray-600">
                   Created multiple web pages for Crediometer using React JS and
-                  Bootstrap CSS. This internship was around 4 months long and I
+                  Bootstrap CSS. This internship was around 5 months long and I
                   learned many new skills and lessons.
                 </p>
               </div>
