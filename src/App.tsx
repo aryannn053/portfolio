@@ -70,7 +70,7 @@ function App() {
             </div>
           </div>
         </nav>
-
+        {/* skill issue */}
         <div className="justify-start pt-10">
           <img
             src={avatar}
