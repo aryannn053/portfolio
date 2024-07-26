@@ -358,8 +358,7 @@ function App() {
           <div>
             <h1 className="wahre">• LeetCode</h1>
             <p className="whytho pt-1 text-gray-600">
-              Started my grind for leetcode on 2nd May, Solved 450 Problems by
-              June 23rd.
+              Started my grind for leetcode on 2nd May, Solved 450 Problems by June 23rd. Reached a rating of 1591.
             </p>
 
             <div className="flexbox-grid-c flexbox-grid-c-cols-2">
@@ -387,6 +386,7 @@ function App() {
             />
           </div>
         </div>
+        
       </section>
       <div className="pb-12">
         <hr />
@@ -400,9 +400,11 @@ function App() {
             <ol className="whytho pb-5 pt-2 text-gray-600">
               <li>HTML CSS</li>
               <li>Python</li>
+              <li>Java</li>
               <li>CPP</li>
               <li>Javascript</li>
             </ol>
+            <br />
             <br />
 
             <h1 className="wahre">Tools</h1>
@@ -411,6 +413,8 @@ function App() {
               <li>Linux</li>
               <li>Git</li>
               <li>VS Code </li>
+              <li>IntelliJ</li>
+              <li>PyCharm</li>
             </ul>
           </div>
           <div>
@@ -420,6 +424,8 @@ function App() {
               <li>Flask</li>
               <li>React JS</li>
               <li>Tailwind CSS</li>
+              <li>Next JS</li>
+              <li>Node JS</li>
             </ol>
             <br />
 
@@ -429,6 +435,8 @@ function App() {
               <li>Problem Solving</li>
               <li>Data Structures and Algorithms</li>
               <li>UI/UX Design</li>
+              <li>Project Management</li>
+              <li>Team Communication</li>
             </ul>
           </div>
         </div>
