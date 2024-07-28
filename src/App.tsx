@@ -415,7 +415,7 @@ function App() {
         <hr />
       </div>
 
-      <section className="skills">
+      <section id="skills">
         <h1 className="custom-font-2 pb-6">Skills</h1>
         <div className="flexbox-grid-c flexbox-grid-c-cols-2">
           <div>

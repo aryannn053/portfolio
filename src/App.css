@@ -176,6 +176,15 @@ html {
   }
 }
 
+@media (min-width: 1024px) {
+  .experience-skill {
+    margin-left: 14.5vw;
+  }
+  .custom-pad {
+    margin-left: 15vw;
+  }
+}
+
 .image-avatar {
   width: 96px;
 }
