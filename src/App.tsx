@@ -5,7 +5,6 @@ import avatar from './assets/avatar.jpg';
 import './App.css';
 
 import credio from './assets/credio.jpg';
-import design from './assets/design.png';
 import image from './assets/image.png';
 
 import image_2 from './assets/image_2.png';
