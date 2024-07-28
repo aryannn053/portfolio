@@ -145,7 +145,31 @@ function App() {
           <div className="pt-0">
             <div className="experience-flex">
               <img
-                src={design}
+                src="/oreon.png"
+                className="rounded-full grayscale hover:grayscale-0"
+                width="50"
+                height="50"
+              />
+
+              <div className="pt-0">
+                <div className='skills-flex'>
+                  <h1>Oreon Project</h1>
+                  <p className='pt-1 experience-skill custom-pad'>Jul 2024 - Present</p>
+                </div>
+                <p className="yewala">Web Developer</p>
+              </div>
+              <div>
+                <p className="whytho text-gray-600">
+                  A part of this exciting and awesome project. Part of the marketing team as well as the web development team.
+                </p>
+              </div>
+            </div>
+          </div>
+      
+          <div className="pt-1">
+            <div className="experience-flex">
+              <img
+                src="https://media.licdn.com/dms/image/D560BAQFj-7E-eQe8KA/company-logo_100_100/0/1721544337699/designmentorweb_logo?e=1730332800&v=beta&t=QLnekH8hh_BqJXwDXuODdY5d3Yd1VfxgEBUo2d7gTyg"
                 className="rounded-full grayscale hover:grayscale-0"
                 width="50"
                 height="50"
@@ -160,7 +184,7 @@ function App() {
               </div>
               <div>
                 <p className="whytho text-gray-600">
-                  Worked on creating UI designs for Design Mentor and building the website. Used Next JS and Tailwind CSS for developing the website and figma for UI designs.
+                  Managed the marketing of Design Mentor and the overall UI design and website. Made more than 23+ UI designs that will be launched soon.
                 </p>
               </div>
             </div>
@@ -186,7 +210,7 @@ function App() {
                 <p className="whytho text-gray-600">
                   Created multiple web pages for Crediometer using React JS and
                   Bootstrap CSS. This internship was around 5 months long and I
-                  learned many new skills and lessons.
+                  learned many new skills.
                 </p>
               </div>
             </div>
