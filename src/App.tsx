@@ -82,7 +82,7 @@ function App() {
           </p>
 
           <p className="whytho pt-6 text-gray-600">
-            A 13 year old doing competitive programming and frontend
+            A 14 year old doing competitive programming and frontend
             development. I've been doing competitive programming and web dev
             from the past 5 years. Welcome to my portfolio, here you will find
             everything I've done in my professional life.
