@@ -1,0 +1,126 @@
+---
+import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Astro description" />
+        <meta name="viewport" content="width=device-width" />
+        <link
+            rel="icon"
+            type="image/jpg"
+            href="https://avatars.githubusercontent.com/u/171474156?v=4"
+        />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+
+        <title>{title}</title>
+        <link
+            rel="sitemap"
+            type="application/xml"
+            title="Sitemap"
+            href="/sitemap-index.xml"
+        />
+        <meta name="title" content={title} />
+        <meta name="description" content={description} />
+
+        <!-- Favicons -->
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="aryan tripathi" />
+        <meta property="og:description" content="random ahh website" />
+        <meta property="og:image" content="https://avatars.githubusercontent.com/u/171474156?v=4" />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="aryan tripathi" />
+        <meta property="twitter:description" content="random ahh website" />
+        <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/171474156?v=4" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <script defer src="https://unpkg.com/@phosphor-icons/web"></script>
+        <script src="https://platform.twitter.com/widgets.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <meta name="generator" content={Astro.generator} />
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;"
+        />
+        <title>{title}</title>
+    </head>
+    <body class="bg-bg overflow-x-hidden">
+        <Navbar />
+        <slot />
+        <div class="flex w-full mt-4 mb-8 justify-center">
+            <div
+                class="md:w-2/3 text-bright py-4 px-4 md:px-6 w-full flex flex-col sm:flex-row items-center justify-between lg:w-1/2"
+            >
+                <p class="text-center my-2 md:my-0">made out of nowhere
+                </p>
+                <p>
+                    built with <a
+                        href="https://astro.build"
+                        target="_blank"
+                        class="underline text-fg">astro</a
+                    >
+                </p>
+            </div>
+        </div>
+    </body>
+    <style is:global>
+        :root {
+            /* Control the padding inside the Tweet card. */
+            --tc-padding: 2em;
+            /* Set the border color of the Tweet card. */
+            --tc-border-color: #cfd9de;
+
+            --tc-background-color: #000;
+        }
+
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Geist;
+        }
+        *::-webkit-scrollbar {
+            width: 15px;
+            background: #090909;
+        }
+
+        *::-webkit-scrollbar-thumb {
+            background-color: #222;
+            border-radius: 3px;
+        }
+
+        @font-face {
+            font-family: "Geist";
+            src: url("/fonts/Geist-Regular.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Geist Light";
+            src: url("/fonts/Geist-Light.ttf") format("truetype");
+            font-weight: lighter;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Iosevka";
+            src: url("/fonts/Iosevka.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+</html>

@@ -1,0 +1,90 @@
+---
+import Layout from "../../layouts/Layout.astro";
+export async function getStaticPaths() {
+    const posts = await Astro.glob("../../poems/*.mdx");
+    return posts.map((p) => ({
+        params: { slug: p.file.split("/").pop().split(".").shift() },
+        props: { post: p },
+    }));
+}
+
+const { Content, frontmatter } = Astro.props.post;
+const { title, description, date, author } = frontmatter;
+---
+
+<Layout title={title} description={description}>
+    <div class="flex justify-center">
+        <div
+            class="div content my-4 flex flex-col gap-2 justify-center items-center break-words w-full md:w-3/4 lg:w-3/5 p-4 md:p-8 md:px-16 lg:p-8 lg:px-24 "
+        >
+            <p class="text-2xl md:text-3xl font-serif self-start text-fg">{title}</p>
+            <div class="w-full"><Content /></div>
+            <div class="self-end">
+                <div class="mt-4 flex justify-end items-center gap-2">
+                    <img
+                        src="https://avatars.githubusercontent.com/u/68964499?v=4"
+                        class="h-8 rounded-[100px]"
+                    />
+                    <p>{author}</p>
+                </div>
+                <div class="text-right -mt-4">{date}</div>
+            </div>
+        </div>
+    </div>
+</Layout>
+<style is:global>
+
+    .content {
+        @apply text-[#ddd] font-[16px] leading-8;
+    }
+    .content strong {
+        @apply text-fg font-bold;
+    }
+
+    .content h1,
+    h2,
+    h3,
+    h4 {
+        @apply font-sans my-3 text-fg font-serif;
+    }
+    .content h1 {
+        @apply text-2xl md:text-4xl font-bold;
+    }
+    .content h2 {
+        @apply text-xl md:text-3xl font-bold;
+    }
+    .content h3 {
+      @apply text-xl md:text-2xl;
+    }
+    .content ul {
+        @apply list-disc ml-4 text-fg;
+    }
+
+    .content a {
+        @apply text-primary text-lg font-medium underline underline-offset-4;
+    }
+
+    .content hr {
+        @apply w-24 h-1 my-4 bg-zinc-100 border-0 rounded md:my-10 dark:bg-zinc-700;
+    }
+
+    .content pre {
+        @apply p-8 font-mono my-6 rounded-lg;
+    }
+
+    .content pre code span {
+        @apply font-mono;
+    }
+
+    .content pre code {
+        @apply bg-transparent px-0;
+    }
+
+    .content img {
+        @apply rounded-lg object-cover my-4;
+    }
+
+    .content code {
+        @apply font-mono bg-mbg px-2;
+    }
+</style>

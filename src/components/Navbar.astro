@@ -1,0 +1,58 @@
+---
+const currentPath = Astro.url.pathname;
+---
+
+<div
+    class="w-full z-[10000000] mb-0 md:mb-4 sticky top-0 md:top-8 flex justify-center"
+>
+    <div
+        class="bg-bg p-4 mx-0 md:mx-4 lg:mx-12 md:p-3 lg:px-4 rounded-none md:rounded-xl md:w-2/3 w-full lg:w-1/2 bg-mbg/60 backdrop-blur-xl md:flex md:items-center md:justify-between"
+    >
+        <div class="flex items-center justify-between">
+            <a class="flex cursor-pointer items-center" href="/">
+                <span
+                    class="text-[18px] md:text-[22px] cursor-pointer antialiased font-bold text-fg"
+                    >aryan</span
+                >
+            </a>
+            <span class="toggler self-center">
+                <i
+                    class={`text-[22px] cursor-pointer block md:hidden text-fg ph-light ph-list`}
+                ></i>
+            </span>
+        </div>
+        <ul
+            class={`md:flex md:items-center ml-0 z-[-1] md:z-auto navlist list-none hidden sm:visible transition-all duration-400 md-static ms:absolute `}
+        >
+            <li class="mx-0 my-6 md:my-0 md:mx-2">
+                <a
+                    class:list={[
+                        `text-[16px] md:text-[18px] px-0 md:px-3 py-1 rounded-md hover:!text-fg font-medium`,
+                        currentPath.includes("/poems")
+                            ? "md:bg-neutral-800/50 !text-fg"
+                            : "bg-transparent !text-bright",
+                    ]}
+                    href="/resume">resume</a
+                >
+            </li>
+            <li class="mx-0 my-6 md:my-0 md:mx-2">
+                <a
+                    class:list={[
+                           `text-[16px] md:text-[18px] px-0 md:px-3 py-1 rounded-md hover:!text-fg font-medium `,
+                        currentPath.includes("/stuff")
+                            ? "md:bg-neutral-800/50 !text-fg"
+                            : "bg-transparent !text-bright",
+                    ]}
+                    href="/achievements">achievements</a
+                >
+            </li>
+        </ul>
+    </div>
+</div>
+<script>
+    const navlist = document.querySelector(".navlist");
+    const toggler = document.querySelector(".toggler");
+    toggler.addEventListener("click", () => {
+        navlist.classList.toggle("hidden");
+    });
+</script>

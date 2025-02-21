@@ -1,0 +1,40 @@
+---
+const { posts, l } = Astro.props;
+---
+
+{
+    posts.map((post, index) => {
+        const href = `/${l}/${post.file.split("/").pop().split(".").shift()}`;
+        return (
+            <div>
+                <a
+                    href={href}
+                    class="cursor-pointer gap-3 flex flex-col items-start"
+                >
+                    <div class="lg:px-0 lg:py-2 md:px-12 px-4 py-4 flex flex-col items-start">
+                        <div class="flex sm:flex-row flex-col  gap-0 justify-center sm:gap-4">
+                            <h2 class="text-lg font-serif  md:text-xl sm:text-2xl text-fg mt-4 md:mb-4 mb-2">
+                                <span class="font-sans mr-1 md:mr-2 font-bold text-bright">
+                                    {index + 1}.
+                                </span>
+                                {post.frontmatter.title}
+                            </h2>
+
+                            <div class="flex items-center sm:mb-0 mb-4 gap-2 md:gap-4">
+                                <div class="font-mono font-light text-sm bg-mbg rounded-md text-neutral-400">
+                                    {post.frontmatter.category}
+                                </div>
+                                <p class="leading-relaxed text-neutral-400 font-mono flex-end text-sm">
+                                    {post.frontmatter.date}
+                                </p>
+                            </div>
+                        </div>
+                        <p class="leading-relaxed lowercase  mb-4 text-sm md:text-[16px] text-bright">
+                            {post.frontmatter.description}
+                        </p>
+                    </div>
+                </a>
+            </div>
+        );
+    })
+}
