@@ -35,17 +35,6 @@ const currentPath = Astro.url.pathname;
                     href="/resume">resume</a
                 >
             </li>
-            <li class="mx-0 my-6 md:my-0 md:mx-2">
-                <a
-                    class:list={[
-                           `text-[16px] md:text-[18px] px-0 md:px-3 py-1 rounded-md hover:!text-fg font-medium `,
-                        currentPath.includes("/stuff")
-                            ? "md:bg-neutral-800/50 !text-fg"
-                            : "bg-transparent !text-bright",
-                    ]}
-                    href="/achievements">achievements</a
-                >
-            </li>
         </ul>
     </div>
 </div>
