@@ -12,6 +12,7 @@ import image_3 from './assets/image_3.png';
 
 import image_4 from './assets/image_4.png';
 import image_5 from './assets/image_5.png';
+import image_6 from './assets/image_6.png';
 import './App.css';
 
 function App() {
@@ -82,14 +83,14 @@ function App() {
           </p>
 
           <p className="whytho pt-6 text-gray-600">
-            A 14 year old doing competitive programming and frontend
+            A 15 year old doing competitive programming and frontend
             development. I've been doing competitive programming and web dev
-            from the past 6 years. Welcome to my portfolio, here you will find
+            from the past 8 years. Welcome to my portfolio, here you will find
             everything I've done in my professional life.
           </p>
 
           <div className="flexbox-custom pt-8 md:gap-16">
-            <a href="mailto:aryannn053@gmail.com" className="wahatag">
+            <a href="mailto:rustaddictive@gmail.com" className="wahatag">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="ionicon s-ion-icon"
@@ -110,7 +111,7 @@ function App() {
               </svg>
               GitHub
             </a>
-            <a href="https://linkedin.com/in/badri-vishal" className="wahatag">
+            <a href="https://linkedin.com/in/aryantri14" className="wahatag">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="ionicon s-ion-icon"
@@ -120,7 +121,7 @@ function App() {
               </svg>
               LinkedIn
             </a>
-            <a href="https://x.com/aryantri13" className="wahatag">
+            <a href="https://x.com/aryantri15" className="wahatag">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="ionicon s-ion-icon"
@@ -141,69 +142,62 @@ function App() {
         <div className="pt-12">
           <p className="custom-font-2">Experience</p>
 
+          {/* Oreon Project */}
           <div className="pt-0">
-            <div className="experience-flex">
+            <div className="experience-flex flex items-start gap-4"> 
+              {/* 1. Logo stays on the left */}
               <img
                 src="/oreon.png"
-                className="rounded-full grayscale hover:grayscale-0"
+                className="rounded-full grayscale hover:grayscale-0 flex-shrink-0"
                 width="50"
                 height="50"
+                alt="Oreon"
               />
 
-              <div className="pt-0">
-                <div className='skills-flex'>
-                  <h1>Oreon Project</h1>
-                  <p className='pt-1 experience-skill custom-pad'>Jul 2024 - Present</p>
+              {/* 2. Container for all text on the right */}
+              <div className="flex-1">
+                <div className="flex flex-col md:flex-row md:justify-between md:items-start">
+                  <div>
+                    <h1 className="text-xl font-bold">Oreon Project</h1>
+                    <p className="yewala pt-1">Web Developer</p>
+                  </div>
+                  {/* Date: Stays below name on mobile, moves to right corner on desktop */}
+                  <p className="experience-skill custom-pad text-sm md:text-base mt-1 md:mt-0">
+                    Jul 2024 - Apr 2025
+                  </p>
                 </div>
-                <p className="yewala">Web Developer</p>
+                
               </div>
               <div>
                 <p className="whytho text-gray-600">
-                  A part of this exciting and awesome project. Part of the marketing team as well as the web development team.
-                </p>
-              </div>
-            </div>
-          </div>
-      
-          <div className="pt-1">
-            <div className="experience-flex">
-              <img
-                src="https://media.licdn.com/dms/image/D560BAQFj-7E-eQe8KA/company-logo_100_100/0/1721544337699/designmentorweb_logo?e=1730332800&v=beta&t=QLnekH8hh_BqJXwDXuODdY5d3Yd1VfxgEBUo2d7gTyg"
-                className="rounded-full grayscale hover:grayscale-0"
-                width="50"
-                height="50"
-              />
-
-              <div className="pt-0">
-                <div className='skills-flex'>
-                  <h1>Design Mentor</h1>
-                  <p className='pt-1 experience-skill'>Jun 2024 - Present</p>
-                </div>
-                <p className="yewala">Software Engineer</p>
-              </div>
-              <div>
-                <p className="whytho text-gray-600">
-                  Managed the marketing of Design Mentor and the overall UI design and website. Made more than 23+ UI designs that will be launched soon.
+                  Oreon is a linux based distro designed for multipurpose use. Been a significant part of this project as a web developer.
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="pt-1">
-            <div className="experience-flex">
+          {/* Crediometer */}
+          <div className="pt-2">
+            <div className="experience-flex flex items-start gap-4">
               <img
                 src={credio}
-                className="rounded-full grayscale hover:grayscale-0"
+                className="rounded-full grayscale hover:grayscale-0 flex-shrink-0"
                 width="50"
                 height="50"
+                alt="Credio"
               />
 
-              <div className="pt-0">
-                <div className='skills-flex'>
-                  <h1>Crediometer</h1>
-                  <p className='pt-1 custom-pad experience-skill'>Sep 2021 - Jan 2022</p>
+              <div className="flex-1">
+                <div className="flex flex-col md:flex-row md:justify-between md:items-start">
+                  <div>
+                    <h1 className="text-xl font-bold">Crediometer</h1>
+                    <p className="yewala pt-1">Frontend Developer</p>
+                  </div>
+                  <p className="experience-skill custom-pad text-sm md:text-base mt-1 md:mt-0">
+                    Sep 2021 - Jan 2022
+                  </p>
                 </div>
-                <p className="yewala">Frontend Developer</p>
+                
               </div>
               <div>
                 <p className="whytho text-gray-600">
@@ -348,13 +342,12 @@ function App() {
           <div>
             <h1 className="wahre">• CodeChef</h1>
             <p className="whytho pt-1 text-gray-600">
-              After few months of grinding problems and learning new algorithms
-              and stuff, I finally reached 1437 rating on codechef.
+              Reached a peak rating of 1663 on CodeChef. Highest global rank of 36.
             </p>
 
             <div className="flexbox-grid-c flexbox-grid-c-cols-2">
               <a
-                href="https://codechef.com/users/aryant053"
+                href="https://codechef.com/users/aryan053"
                 className="wahatag pt-4"
               >
                 <svg
@@ -381,12 +374,12 @@ function App() {
           <div>
             <h1 className="wahre">• LeetCode</h1>
             <p className="whytho pt-1 text-gray-600">
-              Started my grind for leetcode on 2nd May, Solved 450 Problems by June 23rd. Reached a rating of 1591.
+              Solved over 700 various problems on my other account with a peak rating of 1881 on my main account.
             </p>
 
             <div className="flexbox-grid-c flexbox-grid-c-cols-2">
               <a
-                href="https://leetcode.com/skyran"
+                href="https://leetcode.com/aryant053"
                 className="wahatag pt-4"
               >
                 <svg
@@ -404,6 +397,38 @@ function App() {
           <div className="px-10">
             <img
               src={image_5}
+              className="rounded grayscale hover:grayscale-0 pro-image"
+              width="300"
+            />
+          </div>
+        </div>
+        <div className="flexbox-grid-c flexbox-grid-c-cols-2 gap-0 pb-14">
+          <div>
+            <h1 className="wahre">• Codeforces</h1>
+            <p className="whytho pt-1 text-gray-600">
+              Reached a rating of 1702 on codeforces with the highest rank of 654 in a contest.
+            </p>
+
+            <div className="flexbox-grid-c flexbox-grid-c-cols-2">
+              <a
+                href="https://codeforces.com/aryan053"
+                className="wahatag pt-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="ionicon s-ion-icon"
+                  viewBox="0 0 512 512"
+                >
+                  <path d="M255.46 48.74c-114.84 0-208 93.11-208 208s93.12 208 208 208 208-93.12 208-208-93.15-208-208-208zM380.28 252c-2.85 32.63-16.79 49.7-28 58.26S327.61 322.58 316 320.5a41.61 41.61 0 01-26.82-17.19 62.06 62.06 0 01-44 17.57 51.66 51.66 0 01-38.55-16.83c-11.38-12.42-17-30.36-15.32-49.23 3-35 30.91-57.39 56.87-61.48 27.2-4.29 52.23 6.54 62.9 19.46l3.85 4.66-6.34 50.38c-1.19 14.34 3.28 23.48 12.29 25.1 2.39.42 8.1-.13 14.37-4.93 6.72-5.15 15.14-16 17.1-38.47 2.35-26.54-4.35-49.19-19.25-65.49-15.49-16.9-39.09-25.84-68.23-25.84-54 0-101.81 44.43-106.58 99-2.28 26.2 5.67 50.68 22.4 68.93 16.36 17.86 39.31 27.74 64.66 27.74 19 0 30.61-2.05 49.48-8.78a14 14 0 019.4 26.38c-21.82 7.77-36.68 10.4-58.88 10.4-33.28 0-63.57-13.06-85.3-36.77C138 321 127.42 288.94 130.4 254.82c2.91-33.33 18.45-64.63 43.77-88.12s57.57-36.49 90.7-36.49c37.2 0 67.93 12.08 88.87 34.93 20.09 21.91 29.51 52.75 26.54 86.86z"></path>
+                  <path d="M252.57 221c-14.83 2.33-31.56 15.84-33.34 36.26-1 11.06 2 21.22 8.07 27.87a23.65 23.65 0 0017.91 7.75c20.31 0 34.73-14.94 36.75-38.06a14 14 0 01.34-2.07l3.2-25.45a49.61 49.61 0 00-32.93-6.3z"></path>
+                </svg>
+                View Profile
+              </a>
+            </div>
+          </div>
+          <div className="px-10">
+            <img
+              src={image_6}
               className="rounded grayscale hover:grayscale-0 pro-image"
               width="300"
             />
